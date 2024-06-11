@@ -1,0 +1,32 @@
+ol {
+	margin-left: -40px;
+	margin-top: -20px;
+	list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+
+/* Giving style to paragraph element */
+p {
+	color: red;
+}
+
+/* Giving style to element with class note */
+.note {
+	font-size: 20px;
+}
+
+/* Giving style to element with unique id = "id-selector-demo" */
+#id-selector-demo {
+	color: green;
+}
+
+/* Giving style to li whose value attribute has value "4" */
+li[value="4"] {
+	color: blue;
+}
+
+/* Giving style to all elements on the page  */
+* {
+	text-align: center;
+}
