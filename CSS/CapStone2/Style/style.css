@@ -1,0 +1,599 @@
+body {
+	height: 100vh;
+	font-family: "Inria Serif", serif;
+	font-weight: 400;
+	font-style: normal;
+
+	position: relative;
+	width: 100%;
+	height: 5143px;
+	overflow-x: hidden;
+
+	background-image: linear-gradient(
+		180deg,
+		#08002a 5.67%,
+		#7a4ade 60.67%,
+		#b00035 100%
+	);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: white;
+	font-style: normal;
+}
+
+#navbar {
+	color: white;
+	background-color: transparent;
+}
+
+a.nav-link,
+a.navbar-brand {
+	color: white;
+	font-size: large;
+}
+
+a.nav-link:hover {
+	color: #b3a3fb;
+}
+
+.github {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 50%;
+}
+.github img {
+	height: 41px;
+	width: 41px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 1px;
+	/* right: 1px; */
+}
+.linkedin {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 50%;
+}
+.linkedin img {
+	height: 41px;
+	width: 41px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 1px;
+	/* right: 1px; */
+}
+.gmail {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 50%;
+}
+.gmail img {
+	height: 41px;
+	width: 41px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 1px;
+	/* right: 1px; */
+}
+#connect {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	position: relative;
+}
+
+.btn {
+	background-color: #7a4ade;
+	color: white;
+}
+#btn1 {
+	background-color: #ffffff;
+	color: black;
+}
+
+.header {
+	color: white;
+	font-size: 5rem;
+	font-weight: 500;
+}
+
+.mypic {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	box-shadow: 10px 5px 10px 5px #735ae1;
+}
+
+.mypic:hover {
+	filter: hue-rotate(310deg);
+}
+
+.written-content {
+	display: flex;
+	flex-direction: column;
+}
+
+#about .header {
+	font-size: 50px;
+}
+
+.seprator {
+	margin-top: 5rem;
+	width: 100%;
+	height: 10px;
+	background-color: #ffffff;
+}
+
+/* skill section */
+
+#skillsec {
+	height: 100%;
+	width: 92%;
+	display: grid;
+	grid-template-columns: repeat(5, 200px);
+	grid-template-rows: repeat(2, 200);
+	gap: 45px;
+	margin-left: 42px;
+}
+
+#skillcard {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #08002a;
+	border-radius: 20px;
+}
+
+#skillcard:hover {
+	box-shadow: 2px 1px 17px 4px #160e3b;
+}
+
+#skillcard img:hover {
+	height: 130px;
+	width: 130px;
+	transition-duration: 500ms;
+}
+
+#skillcard img {
+	height: 100px;
+	width: 100px;
+}
+
+.container > h1 {
+	margin-top: 59px;
+	display: inline-block;
+	font-weight: 800;
+	margin-left: 52px;
+}
+
+#skills .seprator {
+	width: 18%;
+	position: relative;
+	bottom: 70px;
+	margin-left: 0px;
+	box-shadow: 1px 3px 8px 0.2px white;
+	border-radius: 10px;
+}
+
+#handwave {
+	filter: saturate(2.3);
+}
+
+/* project section */
+
+#project .seprator {
+	width: 20%;
+	position: relative;
+	bottom: 70px;
+	margin-left: 0px;
+	box-shadow: 1px 3px 8px 0.2px white;
+	border-radius: 10px;
+}
+
+#projsec {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.card {
+	background-color: #130065;
+	color: white;
+}
+
+.card-title {
+	font-weight: 800;
+}
+
+.card:hover {
+	box-shadow: 2px 1px 17px 4px #201048;
+}
+
+.title {
+	font-size: large;
+	font-weight: 500;
+	display: inline;
+}
+
+#techstack {
+	display: flex;
+	gap: 9px;
+	margin-bottom: 30px;
+}
+
+#techstack img {
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.buttons {
+	display: flex;
+}
+
+#github {
+	width: 8vw;
+	height: 7vh;
+	background-color: rgb(141, 110, 246);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#github > img {
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	border-radius: 60%;
+}
+#youtube {
+	width: 8vw;
+	height: 7vh;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#youtube > img {
+	height: 50px;
+	width: 50px;
+}
+#like {
+	width: 8vw;
+	height: 7vh;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+#like > img {
+	height: 50px;
+	width: 50px;
+	filter: hue-rotate(-1);
+}
+
+/* achivements section */
+
+#achivements .seprator {
+	width: 27%;
+	position: relative;
+	bottom: 70px;
+	margin-left: 0px;
+	box-shadow: 1px 3px 8px 0.2px white;
+	border-radius: 10px;
+}
+
+.carousel img {
+	border-radius: 1%;
+	position: relative;
+}
+
+#carouselExampleDark
+	> div.carousel-inner
+	> div.carousel-item.active
+	> img:hover {
+	filter: blur(10px);
+}
+
+#carousel-title {
+	margin-bottom: 250px;
+	position: absolute;
+	z-index: 1;
+	top: 300px;
+	bottom: 300px;
+	visibility: hidden; /* Hide by default */
+	/* Other styling properties */
+}
+
+#carousel-title h2 {
+	font-weight: 800;
+	font-size: 40px;
+}
+#carousel-title p {
+	font-weight: 300;
+	font-size: 23px;
+}
+
+#carouselExampleDark
+	> div.carousel-inner
+	> div.carousel-item.active
+	> img:hover
+	+ #carousel-title {
+	visibility: visible; /* Show on hover */
+}
+
+#carousel-title
+	:hover
+	+ #carouselExampleDark
+	> div.carousel-inner
+	> div.carousel-item.active
+	> img {
+	filter: blur(10px);
+}
+
+#bgAchive {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #08002a;
+	padding: 20px;
+}
+
+#eth {
+	color: black;
+}
+
+/* Contact section */
+.container > h1 {
+	font-weight: 800;
+	margin-top: 50px;
+	margin-left: 0;
+}
+
+#contact .seprator {
+	width: 40%;
+	position: relative;
+	bottom: 70px;
+	margin-left: 0px;
+	box-shadow: 1px 3px 8px 0.2px white;
+	border-radius: 10px;
+}
+
+/* skills cards responsive grid */
+@media (max-width: 600px) {
+	body {
+		height: 6843px;
+	}
+
+	#skillsec {
+		height: 100%;
+		width: 92%;
+		display: grid;
+		grid-template-columns: repeat(2, 150px);
+		grid-template-rows: repeat(2, 150);
+		gap: 15px;
+		margin-left: 42px;
+	}
+
+	#skillcard {
+		width: 150px;
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #08002a;
+		border-radius: 20px;
+	}
+
+	#skillcard:hover {
+		box-shadow: 2px 1px 17px 4px #735ae1;
+	}
+
+	#skillcard img:hover {
+		height: 80px;
+		width: 80px;
+		transition-duration: 500ms;
+	}
+
+	#skillcard img {
+		height: 50px;
+		width: 50px;
+	}
+
+	#skills .seprator {
+		width: 50%;
+		position: relative;
+		bottom: 70px;
+		margin-left: 52px;
+	}
+
+	#projsec {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 30px;
+		padding: 20px;
+	}
+	.buttons {
+		display: flex;
+	}
+
+	#github {
+		width: 30vw;
+		height: 6vh;
+		background-color: rgb(141, 110, 246);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 20px;
+	}
+
+	#github > img {
+		height: 50px;
+		width: 50px;
+		background-color: white;
+		border-radius: 60%;
+	}
+	#youtube {
+		width: 30vw;
+		height: 6vh;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#youtube > img {
+		height: 50px;
+		width: 50px;
+	}
+	#like {
+		width: 30vw;
+		height: 6vh;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#like > img {
+		height: 50px;
+		width: 50px;
+	}
+
+	#project .seprator {
+		width: 50%;
+		position: relative;
+		bottom: 70px;
+		margin-left: 52px;
+		box-shadow: 1px 4px 8px 0.2px white;
+		border-radius: 10px;
+	}
+	.sih {
+		height: 200px;
+		width: 100%;
+	}
+
+	#eth {
+		color: white;
+	}
+
+	#carousel-title {
+		margin-bottom: 250px;
+		position: absolute;
+		z-index: 1;
+		top: 10px;
+		bottom: 300px;
+		visibility: hidden; /* Hide by default */
+		/* Other styling properties */
+	}
+
+	#carousel-title h2 {
+		font-weight: 800;
+		font-size: 17px;
+	}
+	#carousel-title p {
+		font-weight: 300;
+		font-size: 10px;
+	}
+	#achivements .seprator {
+		width: 65%;
+		position: relative;
+		bottom: 70px;
+		margin-left: 52px;
+		box-shadow: 1px 3px 8px 0.2px white;
+		border-radius: 10px;
+	}
+
+	#contact .seprator {
+		width: 60%;
+		position: relative;
+		bottom: 70px;
+		margin-left: 0px;
+		box-shadow: 1px 3px 8px 0.2px white;
+		border-radius: 10px;
+	}
+}
+
+/* Typewritter effect */
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+.line-1 {
+	position: relative;
+	top: 50%;
+
+	width: 12em;
+	/* margin: 0 auto; */
+	border-right: 2px solid rgba(255, 255, 255, 0.75);
+	font-size: 180%;
+	text-align: center;
+	white-space: nowrap;
+	color: aliceblue;
+	overflow: hidden;
+	transform: translateY(-50%);
+	margin: 0;
+}
+
+/* Animation */
+.anim-typewriter {
+	animation: typewriter 3s steps(22) 1s 1 normal both,
+		blinkTextCursor 500ms steps(22) infinite normal;
+	margin: 0;
+}
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 9.9em;
+	}
+}
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
+/* Gradient background */
+.gradient-background {
+	background: linear-gradient(300deg, #6a00ff, #735ae1, #b00035);
+	background-size: 180% 180%;
+
+	animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

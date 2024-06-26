@@ -1,0 +1,259 @@
+body {
+	height: 100vh;
+	font-family: "Inria Serif", serif;
+	font-weight: 400;
+	font-style: normal;
+	position: relative;
+	width: 100%;
+	height: 7743px;
+	overflow-x: hidden;
+
+	background-image: linear-gradient(
+		180deg,
+		#08002a 5.67%,
+		#7a4ade 60.67%,
+		#b00035 100%
+	);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: white;
+	font-style: normal;
+}
+
+#navbar {
+	color: white;
+	background-color: transparent;
+}
+
+a.nav-link,
+a.navbar-brand {
+	color: white;
+}
+
+.main-container {
+	display: flex;
+	height: 90vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#writtencontent {
+	height: 100%;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	padding-top: 10em;
+
+	position: relative;
+	left: 5em;
+}
+
+#writtencontent h1 {
+	font-size: 7rem;
+	font-weight: 800;
+	width: 70%;
+}
+#writtencontent p {
+	/* a software developer */
+
+	font-family: "Inria Serif";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 67px;
+	letter-spacing: 0.03em;
+
+	color: #ffffff;
+}
+
+#photo {
+	height: 100%;
+	width: 100%;
+	border-radius: 400px;
+}
+#mypic {
+	height: 100%;
+	width: 90%;
+	margin-left: 70px;
+	position: relative;
+	left: 20px;
+	top: 20px;
+	filter: saturate(2) opacity(0.8);
+
+	mix-blend-mode: normal;
+	border-radius: 400px;
+}
+.github {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 50%;
+}
+.github img {
+	height: 41px;
+	width: 40px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 1px;
+	/* right: 1px; */
+}
+.linkedin {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 50%;
+}
+.linkedin img {
+	height: 41px;
+	width: 40px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 1px;
+	/* right: 1px; */
+}
+.gmail {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 50%;
+}
+.gmail img {
+	height: 41px;
+	width: 40px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 1px;
+	/* right: 1px; */
+}
+#connect {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	position: relative;
+	bottom: 1em;
+}
+#resume {
+	background: rgba(130, 41, 220, 0.71);
+	border-radius: 15px;
+	color: white;
+	width: 9em;
+	height: 2em;
+	position: relative;
+	top: 2em;
+	font-size: 25px;
+	border: none;
+}
+.bgcircle {
+	/* Ellipse 24 */
+	width: 850px;
+	height: 850px;
+	flex-shrink: 0;
+	border-radius: 1000px;
+	border: 74px solid #4f009e;
+	background: rgba(217, 217, 217, 0);
+	mix-blend-mode: color-dodge;
+	position: absolute;
+	z-index: -1;
+	bottom: 429em;
+}
+.bgcircle1 {
+	/* Ellipse 24 */
+	width: 1150px;
+	height: 1150px;
+	flex-shrink: 0;
+	border-radius: 1000px;
+	border: 74px solid #4f009e;
+	background: rgba(217, 217, 217, 0);
+	mix-blend-mode: color-dodge;
+	position: absolute;
+	z-index: -2;
+	right: 30px;
+	bottom: 90px;
+}
+
+@keyframes moveBgcircle {
+	from {
+		bottom: 0; /* Starting from bottom: 0, or adjust as needed */
+	}
+	to {
+		bottom: 429em; /* Final position as per your CSS */
+	}
+}
+
+@keyframes moveBgcircle1 {
+	from {
+		right: -100px; /* Starting from a more left position */
+		bottom: 0; /* Starting lower */
+	}
+	to {
+		right: 30px; /* Final position as per your CSS */
+		bottom: 90px; /* Final position as per your CSS */
+	}
+}
+
+.bgcircle {
+	animation: fadeIn 2s ease-out forwards, moveBgcircle 2s ease-out forwards;
+}
+
+.bgcircle1 {
+	animation: fadeIn 2s ease-out forwards, moveBgcircle1 2s ease-out forwards;
+}
+
+@media (max-width: 600px) {
+	body {
+		width: 600px;
+	}
+	.main-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+	}
+	#photo {
+		height: 100%;
+		width: 100%;
+		border-radius: 400px;
+	}
+	#mypic {
+		height: 100%;
+		width: 90%;
+		margin: 0;
+		position: relative;
+		top: 60px;
+		filter: saturate(2) opacity(0.8);
+
+		mix-blend-mode: normal;
+		border-radius: 400px;
+	}
+
+	#writtencontent {
+		height: 100%;
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		padding-top: 10em;
+		position: relative;
+		left: 5em;
+	}
+
+	#writtencontent h1 {
+		font-size: 5rem;
+		font-weight: 800;
+		width: 70%;
+	}
+	#writtencontent p {
+		/* a software developer */
+
+		font-family: "Inria Serif";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 67px;
+		letter-spacing: 0.03em;
+
+		color: #ffffff;
+	}
+}

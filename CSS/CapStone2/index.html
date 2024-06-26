@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./Style/style.css" />
+	</head>
+	<body>
+		<section id="navbar">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a class="navbar-brand col-s-1 col-md-7" href="#"
+						><img
+							src="./Images/logo.png"
+							alt="Mylogo"
+							height="50px"
+							width="70px"
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavAltMarkup"
+						aria-controls="navbarNavAltMarkup"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav flex gap-s-0 gap-lg-5">
+							<a class="nav-link" aria-current="page" href="#">Home</a>
+							<a class="nav-link" href="#about">About</a>
+							<a class="nav-link" href="#skills">Skills</a>
+							<a class="nav-link" href="#project">Project</a>
+							<a
+								class="nav-link"
+								href="#contact"
+								style="color: rgb(255, 191, 29)"
+								>Contact</a
+							>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</section>
+
+		<section id="hero">
+			<div class="container col-xxl-8 px-4 py-5">
+				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+					<div class="col-12 col-sm-8 col-lg-6">
+						<img
+							src="./Images/myimage.png"
+							class="img-fluid mypic"
+							alt="Bootstrap Themes"
+							width="700"
+							height="500"
+							loading="lazy"
+						/>
+					</div>
+					<div class="col-lg-6 written-content">
+						<h1 class="display-5 lh-1 mb-3 header">Hello I'm Omkar</h1>
+						<p class="line-1 anim-typewriter">a Software Developer</p>
+						<div id="connect">
+							<div class="github">
+								<a href="https://github.com/omithecoder" target="_blank"
+									><img src="./Images/github.png" alt="github"
+								/></a>
+							</div>
+							<div class="linkedin">
+								<a href="https://www.linkedin.com/in/omkar2004/"
+									><img src="./Images/linkedin.png" alt="linkedin"
+								/></a>
+							</div>
+							<div class="gmail">
+								<a href="mailto:omkarkhanvilkar46@gmail.com"
+									><img src="./Images/email (1).png" alt="email"
+								/></a>
+							</div>
+						</div>
+						<div class="d-grid gap-2 d-flex justify-content-start">
+							<a href="./Images/My Resume.pdf"
+								><button
+									type="button"
+									class="btn btn-lg px-4 me-md-2 mt-4 mt-lg-5"
+								>
+									My Resume
+								</button></a
+							>
+							<a href="#contact"
+								><button
+									type="button"
+									class="btn btn-lg px-4 me-md-2 mt-sm-5 btn1 mt-4"
+									id="btn1"
+								>
+									Contact
+								</button></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="seprator gradient-background"></div>
+		<section id="about">
+			<div class="px-4 py-5 my-5 text-center">
+				<img
+					class="d-block mx-auto mb-4"
+					src="./Images/myAvatar1.png"
+					alt="myAvatar"
+					width="200"
+					height="200"
+					style="border: 15px solid white; border-radius: 50%"
+				/>
+
+				<h1 class="display-5 header">
+					<span
+						><img
+							src="./Images/wave.png"
+							alt="wavehand"
+							width="60px"
+							height="60px"
+							id="handwave" /></span
+					>Hello. Hi, I'm Omkar. It's good to meet you.
+				</h1>
+				<div class="col-lg-6 mx-auto">
+					<p class="lead mb-4" style="letter-spacing: 3px">
+						I am Third-year IT student at VIT Pune, passionate about solving
+						complex tech problems. Skilled in C, Java, JavaScript, and Solidity.
+						Web developer proficient in HTML, CSS, React, and Node.js. Always
+						eager to explore new technologies and push the boundaries of what's
+						possible in software engineering.
+					</p>
+					<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+						<button type="button" class="btn btn-lg px-4 me-md-2 mt-1">
+							Skills
+						</button>
+						<button
+							type="button"
+							class="btn btn-lg px-4 me-md-2 mt-sm-1 mt-1"
+							id="btn1"
+						>
+							Projects
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="seprator gradient-background"></div>
+		<section id="skills">
+			<div class="container">
+				<h1>My Skills ⚙️</h1>
+				<div class="seprator gradient-background"></div>
+				<div id="skillsec">
+					<div id="skillcard"><img src="./Images/html.png" alt="html" /></div>
+					<div id="skillcard"><img src="./Images/css-3.png" alt="html" /></div>
+					<div id="skillcard"><img src="./Images/js.png" alt="html" /></div>
+					<div id="skillcard"><img src="./Images/react.png" alt="html" /></div>
+					<div id="skillcard">
+						<img src="./Images/nodejs (1).png" alt="html" />
+					</div>
+					<div id="skillcard"><img src="./Images/java.png" alt="html" /></div>
+					<div id="skillcard">
+						<img
+							src="./Images/solidity-icon.png"
+							style="
+								background-color: rgb(204, 198, 198);
+								border-radius: 20%;
+								padding: 10px;
+							"
+							alt="html"
+						/>
+					</div>
+					<div id="skillcard"><img src="./Images/mysql.png" alt="html" /></div>
+					<div id="skillcard">
+						<img
+							src="./Images/flask (1).svg"
+							style="
+								background-color: rgb(204, 198, 198);
+								border-radius: 20%;
+								padding: 10px;
+							"
+							alt="html"
+						/>
+					</div>
+					<div id="skillcard">
+						<img
+							src="./Images/github.png"
+							style="
+								background-color: rgb(204, 198, 198);
+								border-radius: 20%;
+								padding: 10px;
+							"
+							alt="html"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="seprator gradient-background"></div>
+		<section id="project">
+			<div class="container">
+				<h1>My Projects 💻</h1>
+				<div class="seprator gradient-background"></div>
+				<div id="projsec">
+					<div class="card" style="width: 25rem">
+						<img
+							src="./Images/spotifyclone.jpeg"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">
+								Spotify Clone Using MERN Stack & Cloudinary API
+							</h5>
+							<p class="card-text">
+								features like Secure login with Passport.js. Add songs, create
+								playlists, populate playlists, and like tracks
+							</p>
+							<h5 class="title">Tech Stack:</h5>
+							<div id="techstack">
+								<img src="./Images/mongodb.png" alt="react" />
+								<img src="./Images/expressjs.png" alt="react" />
+								<img src="./Images/react.png" alt="react" />
+								<img src="./Images/nodejs (1).png" alt="react" />
+							</div>
+							<div class="buttons">
+								<a href="#"
+									><div id="github">
+										<img src="./Images/github.png" alt="" /></div
+								></a>
+								<a href="#"
+									><div id="youtube">
+										<img src="./Images/youtube.png" alt="" /></div
+								></a>
+								<a href="#"
+									><div id="like" class="gradient-background">
+										<img src="./Images/like.png" alt="" /></div
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 25rem">
+						<img
+							src="./Images/socialMedia.jpeg"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">
+								Social Media Network using Networking Concept in C
+							</h5>
+							<p class="card-text">
+								features like User registration and profile management. Send
+								connection requests, use direct messaging, and browse
+								personalized news feed.
+							</p>
+							<h5 class="title">Tech Stack:</h5>
+							<div id="techstack">
+								<img src="./Images/letter-c.png" alt="react" />
+								<img src="./Images/networking.png" alt="react" />
+								<img src="./Images/linux.png" alt="react" />
+							</div>
+
+							<div class="buttons">
+								<a href="#"
+									><div id="github">
+										<img src="./Images/github.png" alt="" /></div
+								></a>
+								<a href="#"
+									><div id="youtube">
+										<img src="./Images/youtube.png" alt="" /></div
+								></a>
+								<a href="#"
+									><div id="like" class="gradient-background">
+										<img src="./Images/like.png" alt="" /></div
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 25rem">
+						<img src="./Images/MCQgen.jpeg" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">
+								MCQ & Subjective Questions Generation Portal
+							</h5>
+							<p class="card-text">
+								features like Generate MCQs and subjective questions instantly.
+								User-friendly interface with advanced NLP and Gemini API for
+								accuracy.
+							</p>
+							<h5 class="title">Tech Stack:</h5>
+							<div id="techstack">
+								<img src="./Images/html.png" alt="react" />
+								<img src="./Images/css-3.png" alt="react" />
+								<img src="./Images/flask (1).svg" alt="react" />
+								<img src="./Images/mysql.png" alt="react" />
+								<img src="./Images/coding.png" alt="react" />
+							</div>
+
+							<div class="buttons">
+								<a href="#"
+									><div id="github">
+										<img src="./Images/github.png" alt="" /></div
+								></a>
+								<a href="#"
+									><div id="youtube">
+										<img src="./Images/youtube.png" alt="" /></div
+								></a>
+								<a href="#"
+									><div id="like" class="gradient-background">
+										<img src="./Images/like.png" alt="" /></div
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="seprator gradient-background"></div>
+		<section id="achivements">
+			<div class="container">
+				<h1>My Achivements 🏆</h1>
+				<div class="seprator gradient-background"></div>
+			</div>
+			<div id="bgAchive">
+				<div class="container">
+					<div id="carouselExampleDark" class="carousel carousel-dark slide">
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleDark"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleDark"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleDark"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-bs-interval="10000">
+								<img
+									src="./Images/achiv1.png"
+									class="d-block w-100"
+									alt="..."
+								/>
+								<div
+									class="carousel-caption d-sm-inline-block"
+									id="carousel-title"
+								>
+									<h2 id="eth">2nd Runner Up at Eth Mumbai Hackethon 2024</h2>
+									<p>
+										Compete with 300 best web3 developers in all around the
+										world 🌍
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item" data-bs-interval="2000">
+								<img
+									src="./Images/achiv2.png"
+									class="d-block w-100"
+									alt="..."
+								/>
+								<div
+									class="carousel-caption d-sm-block"
+									id="carousel-title"
+									style="color: white"
+								>
+									<h2>
+										Awarded by dappWorld Best Web3 Project in Hackspiration 2024
+										Organised by MLSC VIT Pune
+									</h2>
+									<p>Compete with 70 teams through out the nation</p>
+								</div>
+							</div>
+							<div class="carousel-item imghover">
+								<img
+									src="./Images/sih.png"
+									class="d-block w-100 sih"
+									alt="..."
+									height="740px"
+									width="100%"
+								/>
+								<div class="carousel-caption d-sm-block" id="carousel-title">
+									<h2>Qualified Internal Smart India Hackathon 2023</h2>
+									<p>
+										Amongst the top 40 teams in the college.Compete with 200
+										teams within the college🏫
+									</p>
+								</div>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleDark"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="seprator gradient-background"></div>
+
+		<section id="contact">
+			<div class="container">
+				<h1>
+					<span style="color: rgb(19, 0, 30)">Contact me</span> to get started
+					🤙
+				</h1>
+				<div class="seprator gradient-background"></div>
+			</div>
+			<div
+				class="container-fluid"
+				style="
+					background: rgba(0, 0, 0, 0.486);
+					height: 60vh;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				"
+			>
+				<div col-12 col-lg-6>
+					<div id="contactform" class="container" style="font-size: 25px">
+						<form action="">
+							<form>
+								<div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label"
+										>Email address</label
+									>
+									<input
+										type="email"
+										class="form-control"
+										id="exampleInputEmail1"
+										aria-describedby="emailHelp"
+										placeholder="Enter email"
+									/>
+									<div id="emailHelp" class="form-text" style="color: white">
+										<p>We'll never share your email with anyone else.</p>
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputname" class="form-label">Name</label>
+									<input
+										type="name"
+										class="form-control"
+										id="exampleInputname"
+										placeholder="Enter name"
+									/>
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputmsg" class="form-label"
+										>Message</label
+									>
+									<textarea
+										type="name"
+										class="form-control"
+										id="exampleInputmsg"
+										placeholder="Enter message"
+									></textarea>
+								</div>
+								<button
+									type="submit"
+									class="btn"
+									style="background-color: #0a001e"
+								>
+									Submit
+								</button>
+							</form>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer">
+			<div
+				class="container-fluid"
+				style="
+					height: 60vh;
+					width: 100%;
+					background-color: black;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					gap: 12px;
+				"
+			>
+				<div>
+					<div id="connect">
+						<div class="github">
+							<a href="https://github.com/omithecoder" target="_blank"
+								><img src="./Images/github.png" alt="github"
+							/></a>
+						</div>
+						<div class="linkedin">
+							<a href="https://www.linkedin.com/in/omkar2004/"
+								><img src="./Images/linkedin.png" alt="linkedin"
+							/></a>
+						</div>
+						<div class="gmail">
+							<a href="mailto:omkarkhanvilkar46@gmail.com"
+								><img src="./Images/email (1).png" alt="email"
+							/></a>
+						</div>
+					</div>
+				</div>
+				<div style="text-align: center; font-weight: 300">
+					<p>© Copyright Designed By Omkar Khanvilkar</p>
+				</div>
+			</div>
+		</section>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,186 @@
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 50px 50px 0 50px;
+	background-color: #faf9f6;
+	display: flex;
+	flex-direction: column;
+	min-height: 95vh;
+	gap: 2rem;
+}
+.main {
+	flex: 1;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+.left .card {
+	display: inline-block;
+	height: 30%;
+	width: 50%;
+}
+
+footer {
+	text-align: right;
+	color: midnightblue;
+	clear: both;
+}
+
+body > div > div.left.card {
+	float: left;
+	display: inline-block;
+	height: 30%;
+	width: 50%;
+}
+
+body > div > div.right.card {
+	float: right;
+	display: inline-block;
+	height: 30%;
+	width: 50%;
+}
+
+.card img {
+	height: 12em;
+	width: 15em;
+}
+
+body > div > div.left.card > img {
+	position: relative;
+	float: left;
+}
+
+body > div > div.left.card > h2 {
+	display: inline;
+	position: relative;
+	left: 1em;
+}
+
+body > div > div.left.card > p {
+	position: relative;
+
+	width: 80%;
+	left: 1em;
+	text-align: justify;
+	text-wrap: wrap;
+}
+
+body > div > div.right.card > img {
+	position: relative;
+	float: left;
+}
+
+body > div > div.right.card > h2 {
+	display: inline;
+	position: relative;
+	left: 1em;
+}
+
+body > div > div.right.card > p {
+	position: relative;
+
+	width: 80%;
+	left: 1em;
+	text-align: justify;
+	text-wrap: wrap;
+}
+
+/* Responsive */
+
+/* Mobile Devices: 319px — 480px */
+@media (min-width: 319px) and (max-width: 480px) {
+	body > div > div.left.card > h2 {
+		display: block;
+		position: relative;
+		left: 0em;
+	}
+
+	body > div > div.left.card > p {
+		display: block;
+		width: 100%;
+		position: relative;
+		left: 0em;
+	}
+
+	body > div > div.right.card > h2 {
+		display: block;
+		position: relative;
+		left: 0em;
+	}
+
+	body > div > div.right.card > p {
+		display: block;
+		width: 100%;
+		position: relative;
+		left: 0em;
+	}
+	body > div > div.left.card {
+		float: none;
+	}
+
+	body > div > div.right.card {
+		float: none;
+	}
+
+	.card img {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+		text-align: center;
+	}
+
+	.main > img {
+		height: 17px;
+		width: 100px;
+	}
+
+	body > div > div.left.card {
+		float: left;
+		display: inline-block;
+		height: 30%;
+		width: 100%;
+	}
+
+	body > div > div.right.card {
+		float: right;
+		display: inline-block;
+		height: 30%;
+		width: 100%;
+	}
+}
+
+/* tablet */
+/* iPads and Tablets: 481px — 1200px */
+@media (min-width: 481px) and (max-width: 1200px) {
+	.card img {
+		width: 80%;
+	}
+	body > div > div.left.card > h2 {
+		display: block;
+		position: relative;
+		left: 0em;
+	}
+
+	body > div > div.left.card > p {
+		display: block;
+		width: 80%;
+		position: relative;
+		left: 0em;
+	}
+
+	body > div > div.right.card > h2 {
+		display: block;
+		position: relative;
+		left: 0em;
+	}
+
+	body > div > div.right.card > p {
+		display: block;
+		width: 80%;
+		position: relative;
+		left: 0em;
+	}
+}

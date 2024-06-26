@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mondrian Project</title>
+		<style>
+			/* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+
+    
+    */
+			html {
+				height: 100%;
+				width: 100%;
+			}
+			body {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.container {
+				height: 748px;
+				width: 748px;
+				background-color: #000;
+				display: grid;
+				grid-template-columns: 320px 198px 153px 59px;
+				grid-template-rows: 414px 140px 146px 20px;
+				gap: 9px;
+			}
+			/* 329+360+50+9 */
+
+			.redbox {
+				height: 414px;
+				width: 320px;
+				background-color: #e72f24;
+
+				order: 0;
+			}
+			.whitebox1 {
+				height: 414px;
+				width: 419px;
+				background-color: #f0f1ec;
+				order: 1;
+				grid-column: span 3;
+			}
+			.whitebox2 {
+				height: 295px;
+				width: 320px;
+				background-color: #f0f1ec;
+				order: 3;
+			}
+			.whitebox3 {
+				height: 295px;
+				width: 360px;
+				background-color: #f0f1ec;
+				order: 4;
+				grid-row: span 2;
+				grid-column: span 2;
+			}
+			.bluebox {
+				height: 130px;
+				width: 50px;
+				border-bottom: 10px solid;
+				background-color: #004592;
+				order: 5;
+			}
+			.whitebox4 {
+				height: 176px;
+				width: 50px;
+				background-color: #f0f1ec;
+				grid-row: span 2;
+				grid-row-start: 3;
+				grid-row-end: 5;
+				grid-column-start: 4;
+
+				order: 6;
+			}
+			.whitebox5 {
+				height: 21px;
+				width: 320px;
+				background-color: #f0f1ec;
+				order: 7;
+				grid-row: 4;
+			}
+
+			.yellowbox {
+				height: 21px;
+				width: 198px;
+				background-color: #f9d01e;
+				order: 8;
+				grid-row-start: 4;
+			}
+			.blackbox {
+				height: 21px;
+				width: 153px;
+				background-color: #232629;
+				order: 9;
+				grid-row-start: 4;
+				grid-column-start: 3;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Write your HTML here -->
+		<div class="container">
+			<div class="redbox"></div>
+			<div class="whitebox1"></div>
+			<div class="whitebox2"></div>
+			<div class="whitebox3"></div>
+			<div class="bluebox"></div>
+			<div class="whitebox4"></div>
+			<div class="whitebox5"></div>
+			<div class="yellowbox"></div>
+			<div class="blackbox"></div>
+		</div>
+	</body>
+</html>
